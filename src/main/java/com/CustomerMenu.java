@@ -1,8 +1,16 @@
 package com;
 
-public class CustomerMenu {
-    public void addItemToCart() {
+import java.util.*;
 
+public class CustomerMenu {
+
+    private ArrayList<Object[]> cart;
+    public CustomerMenu() {
+        cart = new ArrayList<>();
+    }
+
+    public void addItemToCart() {
+        
     }
 
     public void updateItemInCart() {
@@ -18,6 +26,6 @@ public class CustomerMenu {
     }
 
     public void checkOut() {
-        
+
     }
 }

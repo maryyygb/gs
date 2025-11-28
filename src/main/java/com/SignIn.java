@@ -398,13 +398,13 @@ public class SignIn {
     }
 
     public void addNewCustomer(String em, String pass) {
-        this.adminEmails.add(em);
-        this.adminPasswords.add(pass);
+        this.customerEmails.add(em);
+        this.customerPasswords.add(pass);
     }
 
     public void addNewClerk(String em, String pass) {
-        this.adminEmails.add(em);
-        this.adminPasswords.add(pass);
+        this.clerkEmails.add(em);
+        this.clerkPasswords.add(pass);
     }
 
 }
