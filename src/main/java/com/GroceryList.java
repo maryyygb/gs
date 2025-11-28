@@ -145,7 +145,7 @@ public class GroceryList {
 		System.out.println("\n========== FRUITS ==========");
 		System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Weight", "Price", "Stock");
 		for (Object[] item : fruits) {
-			System.out.printf("%-5s %-15s %-10s ₱%-9.2f %-10s%n",
+			System.out.printf("%-5s %-15s %-10s ₱ %-9.2f %-10s%n",
 					item[0], item[1], item[2], item[3], item[4]);
 		}
 
@@ -154,7 +154,7 @@ public class GroceryList {
 		System.out.println("\n========== VEGETABLES ==========");
 		System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Weight", "Price", "Stock");
 		for (Object[] item : vegetables) {
-			System.out.printf("%-5s %-15s %-10s ₱%-9.2f %-10s%n",
+			System.out.printf("%-5s %-15s %-10s ₱ %-9.2f %-10s%n",
 					item[0], item[1], item[2], item[3], item[4]);
 		}
 
@@ -163,7 +163,7 @@ public class GroceryList {
 		System.out.println("\n========== SNACKS ==========");
 		System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Weight", "Price", "Stock");
 		for (Object[] item : snacks) {
-			System.out.printf("%-5s %-15s %-10s ₱%-9.2f %-10s%n",
+			System.out.printf("%-5s %-15s %-10s ₱ %-9.2f %-10s%n",
 					item[0], item[1], item[2], item[3], item[4]);
 		}
 
@@ -172,7 +172,7 @@ public class GroceryList {
 		System.out.println("\n========== DAIRY ==========");
 		System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Weight", "Price", "Stock");
 		for (Object[] item : dairy) {
-			System.out.printf("%-5s %-15s %-10s ₱%-9.2f %-10s%n",
+			System.out.printf("%-5s %-15s %-10s ₱ %-9.2f %-10s%n",
 					item[0], item[1], item[2], item[3], item[4]);
 		}
 
@@ -181,7 +181,7 @@ public class GroceryList {
 		System.out.println("\n========== BEVERAGES ==========");
 		System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Weight", "Price", "Stock");
 		for (Object[] item : beverages) {
-			System.out.printf("%-5s %-15s %-10s ₱%-9.2f %-10s%n",
+			System.out.printf("%-5s %-15s %-10s ₱ %-9.2f %-10s%n",
 					item[0], item[1], item[2], item[3], item[4]);
 		}
 
@@ -191,7 +191,7 @@ public class GroceryList {
 		System.out.println("\n========== COSMETICS ==========");
 		System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
 		for (Object[] item : cosmetics) {
-			System.out.printf("%-5s %-15s %-10s ₱%-9.2f %-10s%n",
+			System.out.printf("%-5s %-15s %-10s ₱ %-9.2f %-10s%n",
 					item[0], item[1], item[2], item[3], item[4]);
 		}
 
@@ -201,7 +201,7 @@ public class GroceryList {
 		System.out.println("\n========== HOUSEHOLD ==========");
 		System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
 		for (Object[] item : household) {
-			System.out.printf("%-5s %-15s %-10s ₱%-9.2f %-10s%n",
+			System.out.printf("%-5s %-15s %-10s ₱ %-9.2f %-10s%n",
 					item[0], item[1], item[2], item[3], item[4]);
 		}
 
@@ -211,7 +211,7 @@ public class GroceryList {
 		System.out.println("\n========== CLOTHES ==========");
 		System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
 		for (Object[] item : clothes) {
-			System.out.printf("%-5s %-15s %-10s ₱%-9.2f %-10s%n",
+			System.out.printf("%-5s %-15s %-10s ₱ %-9.2f %-10s%n",
 					item[0], item[1], item[2], item[3], item[4]);
 		}
 
@@ -221,11 +221,12 @@ public class GroceryList {
 		System.out.println("\n========== NEW ITEMS ==========");
 		System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
 		for (Object[] item : newItems) {
-			System.out.printf("%-5s %-15s %-10s ₱%-9.2f %-10s%n",
+			System.out.printf("%-5s %-15s %-10s ₱ 2%-9.2f %-10s%n",
 					item[0], item[1], item[2], item[3], item[4]);
 		}
 
 		System.out.println("");
 		System.out.println("");
 	}
+
 }

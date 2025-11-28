@@ -18,7 +18,6 @@ public class Menu {
     }
 
     public void adminMenu() {
-
         System.out.println("=============================");
         System.out.println(" ");
         System.out.println("=============================");
@@ -37,8 +36,8 @@ public class Menu {
                                                                     */
         System.out.println("5 -   View All Admin User");
         System.out.println("6 -   Add new Admin User");
-        System.out.println("7 -   Update Admin User");
-        System.out.println("8 -   Delete Admin User");
+        System.out.println("7 -   Add new Customer User");
+        System.out.println("8 -   Add new Clerk User");
         System.out.println("");
         System.out.println("===========================");
         System.out.println("");
@@ -53,11 +52,9 @@ public class Menu {
         System.out.println("");
 
         System.out.println("");
-
     }
 
     public void customerMenu() {
-
         System.out.println("=============================");
         System.out.println(" ");
         System.out.println("=============================");
@@ -87,11 +84,9 @@ public class Menu {
         System.out.println("");
 
         System.out.println("");
-
     }
 
     public void clerkMenu() {
-
         System.out.println("=============================");
         System.out.println(" ");
         System.out.println("=============================");
@@ -117,7 +112,6 @@ public class Menu {
         System.out.println("");
 
         System.out.println("");
-
     }
 
     public void setUserChoice(int choice) {

@@ -3,8 +3,16 @@ package com;
 import java.util.*;
 
 public class MenuActions {
-    private GroceryList storeItems = new GroceryList();
+    Scanner s = new Scanner(System.in);
 
+    private GroceryList storeItems = new GroceryList();
+    private SignIn cred = new SignIn();
+
+    public MenuActions() {
+        cred.checkEmailActiveC("trigger");
+    }
+
+    // 1
     public void addGroceryItem() {
 
         Scanner s = new Scanner(System.in);
@@ -37,11 +45,63 @@ public class MenuActions {
 
     }
 
+    // 2
     public void viewAllItems() {
         storeItems.groceryList();
     }
 
+    // 3
     public void viewAllCustomerUsers() {
-
+        cred.getCustomersEmails();
     }
+
+    // 4
+    public void viewAllClerkUsers() {
+        cred.getClerkEmails();
+    }
+
+    // 5
+    public void viewAllAdminUsers() {
+        cred.getAdminEmails();
+    }
+
+    // 6
+    public void addNewAdminUser() {
+        System.out.print("Type the new email: ");
+        String email = s.nextLine();
+
+        System.out.println("");
+
+        System.out.println("Type the password: ");
+        String pass = s.nextLine();
+
+        cred.addNewAdmin(email, pass);
+    }
+
+    // 7
+    public void addNewCustomerUser() {
+        System.out.print("Type the new email: ");
+        String email = s.nextLine();
+
+        System.out.println("");
+
+        System.out.println("Type the password: ");
+        String pass = s.nextLine();
+
+        cred.addNewCustomer(email, pass);
+    }
+
+    // 8
+    public void addNewClerkUser() {
+        System.out.print("Type the new email: ");
+        String email = s.nextLine();
+
+        System.out.println("");
+
+        System.out.println("Type the password: ");
+        String pass = s.nextLine();
+
+        cred.addNewClerk(email, pass);
+    }
+
 }

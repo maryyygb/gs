@@ -19,15 +19,15 @@ public class SignIn {
     private boolean approval;
 
     // ADMIN
-    private ArrayList<String> adminEmails;
+    public ArrayList<String> adminEmails;
     private ArrayList<String> adminPasswords;
 
     // CUSTOMER
-    private ArrayList<String> customerEmails;
+    public ArrayList<String> customerEmails;
     private ArrayList<String> customerPasswords;
 
     // CLERK
-    private ArrayList<String> clerkEmails;
+    public ArrayList<String> clerkEmails;
     private ArrayList<String> clerkPasswords;
 
     // constructor
@@ -44,6 +44,29 @@ public class SignIn {
         clerkEmails = new ArrayList<>();
         clerkPasswords = new ArrayList<>();
 
+        adminEmails.add("new@admin.com");
+        adminEmails.add("mary@admin.com");
+        adminEmails.add("haggrid@admin.com");
+        adminEmails.add("mendez@admin.com");
+        adminEmails.add("access@admin.com");
+        adminEmails.add("1@.");
+        adminEmails.add("1");
+
+        customerEmails.add("new@customer.com");
+        customerEmails.add("mary@customer.com");
+        customerEmails.add("haggrid@customer.com");
+        customerEmails.add("mendez@customer.com");
+        customerEmails.add("access@customer.com");
+        customerEmails.add("2@.");
+        customerEmails.add("2");
+
+        clerkEmails.add("new@clerk.com");
+        clerkEmails.add("mary@clerk.com");
+        clerkEmails.add("haggrid@clerk.com");
+        clerkEmails.add("mendez@clerk.com");
+        clerkEmails.add("access@clerk.com");
+        clerkEmails.add("3@.");
+        clerkEmails.add("3");
     }
 
     // to display the right menu for each role
@@ -117,24 +140,6 @@ public class SignIn {
     // CHECK EMAIL ADMIN
     public boolean checkEmailActive(String em) {
 
-        // ArrayList<String> adminEmails = new ArrayList<>();
-
-        adminEmails.add("new@admin.com");
-        adminEmails.add("mary@admin.com");
-        adminEmails.add("haggrid@admin.com");
-        adminEmails.add("mendez@admin.com");
-        adminEmails.add("access@admin.com");
-        adminEmails.add("1@.");
-        adminEmails.add("1");
-
-        // boolean emailActive = adminEmails.contains(em);
-
-        // String validEmail = "Admin ID: " + adminEmails.indexOf(em);
-        // String invalidEmail = "The user is not in the Admin List.";
-
-        // this.emailId = adminEmails.indexOf(em);
-        // this.checkEmail = adminEmails.contains(em);
-
         if (adminEmails.contains(em)) {
             return true;
         } else {
@@ -144,8 +149,6 @@ public class SignIn {
 
     // CHECK PASSWORD ADMIN
     public boolean checkPasswordActive(String password) {
-        // ArrayList<String> adminPasswords = new ArrayList<>();
-
         adminPasswords.add("12345678");
         adminPasswords.add("mary1111");
         adminPasswords.add("22222222");
@@ -154,20 +157,11 @@ public class SignIn {
         adminPasswords.add("11111111");
         adminPasswords.add("1");
 
-        // String check = "The password is for user number " +
-        // adminPasswords.indexOf(password);
-
-        /* System.out.println(check); */
-
-        // this.passId = adminPasswords.indexOf(password);
-        // this.checkPass = adminPasswords.contains(password);
-
         if (adminPasswords.contains(password)) {
             return true;
         } else {
             return false;
         }
-
     }
 
     // CUSTOMER SIGN IN
@@ -217,31 +211,12 @@ public class SignIn {
                 System.out.println("");
             }
         }
-
         setCredentials(i1, i2, i3);
     }
 
     // CHECKER FOR CUSTOMER
     // EMAIL CHECKER AUTH FOR CUSTOMERS
     public boolean checkEmailActiveC(String em) {
-
-        // ArrayList<String> customerEmails = new ArrayList<>();
-
-        customerEmails.add("new@customer.com");
-        customerEmails.add("mary@customer.com");
-        customerEmails.add("haggrid@customer.com");
-        customerEmails.add("mendez@customer.com");
-        customerEmails.add("access@customer.com");
-        customerEmails.add("2@.");
-        customerEmails.add("2");
-
-        // boolean emailActive = customerEmails.contains(em);
-
-        // String validEmail = "Customer ID: " + customerEmails.indexOf(em);
-        // String invalidEmail = "The user is not in the Customer List.";
-
-        // this.emailId = customerEmails.indexOf(em);
-        // this.checkEmail = customerEmails.contains(em);
 
         if (customerEmails.contains(em)) {
             return true;
@@ -252,8 +227,6 @@ public class SignIn {
 
     // CHECK PASSWORD CUSTOMER
     public boolean checkPasswordActiveC(String password) {
-        // ArrayList<String> customerPasswords = new ArrayList<>();
-
         customerPasswords.add("12345678");
         customerPasswords.add("mary1111");
         customerPasswords.add("22222222");
@@ -262,20 +235,11 @@ public class SignIn {
         customerPasswords.add("22222222");
         customerPasswords.add("2");
 
-        // String check = "The password is for user number " +
-        // customerPasswords.indexOf(password);
-
-        /* System.out.println(check); */
-
-        // this.passId = customerPasswords.indexOf(password);
-        // this.checkPass = customerPasswords.contains(password);
-
         if (customerPasswords.contains(password)) {
             return true;
         } else {
             return false;
         }
-
     }
 
     // CLERK SIGN IN
@@ -325,32 +289,12 @@ public class SignIn {
                 System.out.println("");
             }
         }
-
         setCredentials(i1, i2, i3);
     }
 
     // CHECKER FOR CLERK
     // CHECK EMAIL CLERK
     public boolean checkEmailActiveI(String em) {
-
-        // ArrayList<String> clerkEmails = new ArrayList<>();
-
-        clerkEmails.add("new@clerk.com");
-        clerkEmails.add("mary@clerk.com");
-        clerkEmails.add("haggrid@clerk.com");
-        clerkEmails.add("mendez@clerk.com");
-        clerkEmails.add("access@clerk.com");
-        clerkEmails.add("3@.");
-        clerkEmails.add("3");
-
-        // boolean emailActive = clerkEmails.contains(em);
-
-        // String validEmail = "Clerk's ID: " + clerkEmails.indexOf(em);
-        // String invalidEmail = "The user is not in the Admin List.";
-
-        // this.emailId = clerkEmails.indexOf(em);
-        // this.checkEmail = clerkEmails.contains(em);
-
         if (clerkEmails.contains(em)) {
             return true;
         } else {
@@ -360,8 +304,6 @@ public class SignIn {
 
     // CHECK PASSWORD CLERK
     public boolean checkPasswordActiveI(String password) {
-        // ArrayList<String> clerkPasswords = new ArrayList<>();
-
         clerkPasswords.add("12345678");
         clerkPasswords.add("mary1111");
         clerkPasswords.add("22222222");
@@ -370,20 +312,11 @@ public class SignIn {
         clerkPasswords.add("33333333");
         clerkPasswords.add("3");
 
-        // String check = "The password is for user number " +
-        // clerkPasswords.indexOf(password);
-
-        /* System.out.println(check); */
-
-        // this.passId = clerkPasswords.indexOf(password);
-        // this.checkPass = clerkPasswords.contains(password);
-
         if (clerkPasswords.contains(password)) {
             return true;
         } else {
             return false;
         }
-
     }
 
     // Setting Credentials to be accessible outside the class
@@ -419,6 +352,59 @@ public class SignIn {
 
     public String getPassword() {
         return password;
+    }
+
+    // DISPLAY EMAIL LIST OF DIFFERENT ROLES
+    public void getCustomersEmails() {
+        System.out.println("LIST OF CUSTOMERS' EMAILS");
+        System.out.println("");
+
+        System.out.printf("%-5s %-15s%n", "ID", "Emails");
+        System.out.println("");
+
+        for (int i = 0; i < customerEmails.size(); i++) {
+            System.out.printf("%-5s %-15s%n", i, customerEmails.get(i));
+        }
+    }
+
+    public void getAdminEmails() {
+        System.out.println("LIST OF ADMINS' EMAILS");
+        System.out.println("");
+
+        System.out.printf("%-5s %-15s%n", "ID", "Emails");
+        System.out.println("");
+
+        for (int i = 0; i < adminEmails.size(); i++) {
+            System.out.printf("%-5s %-15s%n", i, adminEmails.get(i));
+        }
+    }
+
+    public void getClerkEmails() {
+        System.out.println("LIST OF CLERKS' EMAILS");
+        System.out.println("");
+
+        System.out.printf("%-5s %-15s%n", "ID", "Emails");
+        System.out.println("");
+
+        for (int i = 0; i < clerkEmails.size(); i++) {
+            System.out.printf("%-5s %-15s%n", i, clerkEmails.get(i));
+        }
+    }
+
+    // ADDING NEW USERS' EMAILS AND PASSWORDS
+    public void addNewAdmin(String em, String pass) {
+        this.adminEmails.add(em);
+        this.adminPasswords.add(pass);
+    }
+
+    public void addNewCustomer(String em, String pass) {
+        this.adminEmails.add(em);
+        this.adminPasswords.add(pass);
+    }
+
+    public void addNewClerk(String em, String pass) {
+        this.adminEmails.add(em);
+        this.adminPasswords.add(pass);
     }
 
 }
