@@ -3,18 +3,14 @@ package com;
 import java.util.*;
 
 public class Menu {
-    // private MenuActions menu = new MenuActions();
     private int choice;
-    // private int inp;
-    // It is best practice to share a single Scanner instance or create it in Main
-    // and pass it around, but simply removing the close calls fixes the immediate
-    // error.
+
 
     private Scanner sc;
 
     // 2. Modify the constructor to accept a Scanner instance
     public Menu(Scanner s) {
-        this.sc = s; // Assign the shared scanner
+        this.sc = s; 
     }
 
     public void adminMenu() {
