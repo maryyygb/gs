@@ -13,6 +13,8 @@ public class Main {
 
         // Menu menu = new Menu();
         MenuActions action = new MenuActions();
+        CustomerMenu cmenu = new CustomerMenu();
+        ClerkMenu imenu = new ClerkMenu();
 
         SignIn sign = new SignIn();
 
@@ -115,15 +117,15 @@ public class Main {
                     } else if (choice == 1) {
                         action.viewAllItems();
                     } else if (choice == 2) {
-                        action.addItemToCart();
+                        cmenu.addItemToCart();
                     } else if (choice == 3) {
-                        action.updateItemInCart();
+                        cmenu.updateItemInCart();
                     } else if (choice == 4) {
-                        action.viewAllAdminUsers();
+                        cmenu.deleteItemInCart();
                     } else if (choice == 5) {
-                        action.addNewAdminUser();
+                        cmenu.openCart();
                     } else if (choice == 6) {
-                        action.addNewAdminUser();
+                        cmenu.checkOut();
                     } else if (choice > 6) {
                         System.out.println("Wrong Input. Try again.");
                     }
@@ -155,22 +157,14 @@ public class Main {
                         System.out.println("You have successfully log out!");
                         break;
                     } else if (choice == 1) {
-                        action.addGroceryItem();
-                    } else if (choice == 2) {
                         action.viewAllItems();
+                    } else if (choice == 2) {
+                        action.addGroceryItem();
                     } else if (choice == 3) {
-                        action.viewAllCustomerUsers();
+                        imenu.updateItem();
                     } else if (choice == 4) {
-                        action.viewAllClerkUsers();
-                    } else if (choice == 5) {
-                        action.viewAllAdminUsers();
-                    } else if (choice == 6) {
-                        action.addNewAdminUser();
-                    } else if (choice == 7) {
-                        action.addNewCustomerUser();
-                    } else if (choice == 8) {
-                        action.addNewClerkUser();
-                    } else if (choice > 8) {
+                        imenu.deleteItem();
+                    } else if (choice > 4) {
                         System.out.println("Wrong Input. Try again.");
                     }
                 }
