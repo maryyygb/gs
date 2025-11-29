@@ -77,8 +77,56 @@ public class CustomerMenu {
 
     }
 
-    public void deleteItemInCart() {
-        
+    public void deleteItemInCart(int idX) {
+        System.out.println("");
+
+        while (true) {
+            System.out.println("--------------------------------------------------");
+            System.out.println("Note: If you wish to delete an item instead,");
+            System.out.println("      please go back or select 2.");
+            System.out.println("      Deleting an item will be canceled once you");
+            System.out.println("      press 2. Please be careful!");
+            System.out.println("--------------------------------------------------");
+            System.out.println("");
+            System.out.println("Select a Choice below");
+            System.out.println(" 1 - Proceed");
+            System.out.println(" 2 - Cancel");
+            System.out.println("");
+            System.out.print("You choice: ");
+            int c = s.nextInt();
+            s.nextLine();
+            System.out.println("--------------------------------------------------");
+
+            if (c == 1) {
+
+                Iterator<Object[]> iterator = cart.iterator();
+                while (iterator.hasNext()) {
+
+                    Object[] item = iterator.next();
+
+                    int id = (Integer) item[0];
+
+                    if (id == idX) {
+                        iterator.remove(); // safely remove during iteration
+                        System.out.println(item[1] + " has been deleted successfully!");
+                        break;
+
+                    } else {
+
+                        System.out.println("Item with ID " + idX + " not found.");
+                        break;
+                    }
+
+                }
+
+            } else if (c == 2) {
+                System.out.println("You successfully cancelled!");
+                break;
+            } else {
+                System.out.println("Wrong input. Please try again.");
+            }
+
+        }
     }
 
     public void openCart() {
