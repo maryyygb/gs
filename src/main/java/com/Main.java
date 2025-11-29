@@ -11,7 +11,7 @@ public class Main {
         // Pass the scanner 's' when initializing the Menu object
         Menu menu = new Menu(s);
 
-        // Menu menu = new Menu();
+        GroceryList gl = new GroceryList();
         MenuActions action = new MenuActions();
         CustomerMenu cmenu = new CustomerMenu();
         ClerkMenu imenu = new ClerkMenu();
@@ -107,7 +107,7 @@ public class Main {
 
                 while (sign.connect()) {
 
-                    menu.clerkMenu();
+                    menu.customerMenu();
 
                     int choice = menu.getIntChoice();
 
@@ -117,7 +117,26 @@ public class Main {
                     } else if (choice == 1) {
                         action.viewAllItems();
                     } else if (choice == 2) {
-                        cmenu.addItemToCart();
+                        System.out.println("Please select the ID of the Product/Item you wish to add.");
+
+                        System.out.print("Item selected: ID ");
+
+                        int idC = s.nextInt();
+                        s.nextLine();
+
+                        if (id >= 1 || id <= 10) {
+                            gl.getFruits(idC);
+
+                            int idF = gl.idC;
+                            String nameF = gl.nameC;
+                            String sizeF = gl.sizeC;
+                            double priceF = gl.priceC;
+                            int stockF = gl.stocksC;
+
+                            cmenu.addItemToCart(idF, nameF, sizeF, priceF, stockF);
+                        }
+
+                        // cmenu.addItemToCart();
                     } else if (choice == 3) {
                         cmenu.updateItemInCart();
                     } else if (choice == 4) {
