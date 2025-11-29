@@ -270,36 +270,222 @@ public class GroceryList {
 
 	}
 
-	public void getVegetables() {
+	public void getVegetables(int id) {
+
+		for (Object[] item : vegetables) {
+
+			int base = (Integer) item[0];
+
+			if (base == id) {
+				idC = (Integer) item[0];
+				nameC = (String) item[1];
+				sizeC = (String) item[2];
+				priceC = (Double) item[3];
+				stocksC = (Integer) item[4];
+
+				System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						item[0], item[1], item[2], item[3], item[4]);
+				break;
+
+			}
+
+		}
 
 	}
 
-	public void getSnacks() {
+	public void getSnacks(int id) {
+
+		for (Object[] item : snacks) {
+
+			int base = (Integer) item[0];
+
+			if (base == id) {
+				idC = (Integer) item[0];
+				nameC = (String) item[1];
+				sizeC = (String) item[2];
+				priceC = (Double) item[3];
+				stocksC = (Integer) item[4];
+
+				System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						item[0], item[1], item[2], item[3], item[4]);
+				break;
+
+			}
+
+		}
 
 	}
 
-	public void getDairy() {
+	public void getDairy(int id) {
+
+		for (Object[] item : dairy) {
+
+			int base = (Integer) item[0];
+
+			if (base == id) {
+				idC = (Integer) item[0];
+				nameC = (String) item[1];
+				sizeC = (String) item[2];
+				priceC = (Double) item[3];
+				stocksC = (Integer) item[4];
+
+				System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						item[0], item[1], item[2], item[3], item[4]);
+				break;
+
+			}
+
+		}
 
 	}
 
-	public void getBeverages() {
+	public void getBeverages(int id) {
+
+		for (Object[] item : beverages) {
+
+			int base = (Integer) item[0];
+
+			if (base == id) {
+				idC = (Integer) item[0];
+				nameC = (String) item[1];
+				sizeC = (String) item[2];
+				priceC = (Double) item[3];
+				stocksC = (Integer) item[4];
+
+				System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						item[0], item[1], item[2], item[3], item[4]);
+				break;
+
+			}
+
+		}
 
 	}
 
-	public void getCosmetics() {
+	public void getCosmetics(int id) {
+
+		for (Object[] item : cosmetics) {
+
+			int base = (Integer) item[0];
+
+			if (base == id) {
+				idC = (Integer) item[0];
+				nameC = (String) item[1];
+				sizeC = (String) item[2];
+				priceC = (Double) item[3];
+				stocksC = (Integer) item[4];
+
+				System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						item[0], item[1], item[2], item[3], item[4]);
+				break;
+
+			}
+
+		}
 
 	}
 
-	public void getHousehold() {
+	public void getHousehold(int id) {
+
+		for (Object[] item : household) {
+
+			int base = (Integer) item[0];
+
+			if (base == id) {
+				idC = (Integer) item[0];
+				nameC = (String) item[1];
+				sizeC = (String) item[2];
+				priceC = (Double) item[3];
+				stocksC = (Integer) item[4];
+
+				System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						item[0], item[1], item[2], item[3], item[4]);
+				break;
+
+			}
+
+		}
 
 	}
 
-	public void getClothes() {
+	public void getClothes(int id) {
+
+		for (Object[] item : clothes) {
+
+			int base = (Integer) item[0];
+
+			if (base == id) {
+				idC = (Integer) item[0];
+				nameC = (String) item[1];
+				sizeC = (String) item[2];
+				priceC = (Double) item[3];
+				stocksC = (Integer) item[4];
+
+				System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						item[0], item[1], item[2], item[3], item[4]);
+				break;
+
+			}
+
+		}
 
 	}
 
-	public void getNewArrivals() {
+	public void getNewArrivals(int id) {
 
+		for (Object[] item : newItems) {
+
+			int base = (Integer) item[0];
+
+			if (base == id) {
+				idC = (Integer) item[0];
+				nameC = (String) item[1];
+				sizeC = (String) item[2];
+				priceC = (Double) item[3];
+				stocksC = (Integer) item[4];
+
+				System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						item[0], item[1], item[2], item[3], item[4]);
+				break;
+
+			}
+
+		}
+
+	}
+
+	public Object[] findProductInAllLists(int targetId) {
+		// A single list of all your category lists
+		List<ArrayList<Object[]>> allCategories = List.of(
+				fruits, vegetables, snacks, dairy, beverages,
+				cosmetics, household, clothes, newItems);
+
+		for (ArrayList<Object[]> categoryList : allCategories) {
+			for (Object[] item : categoryList) {
+				// Compare the ID (first element) with the targetId
+				if (((Integer) item[0]).intValue() == targetId) {
+					return item; // Found the matching product array, return it
+				}
+			}
+		}
+
+		return null; // If the loop finishes without finding anything
 	}
 
 }

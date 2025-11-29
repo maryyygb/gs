@@ -1,0 +1,101 @@
+// System.out.println("Please select the ID of the Product/Item you wish to
+                        // add.");
+
+                        // System.out.print("Item selected: ID ");
+
+                        // int idC = s.nextInt();
+                        // s.nextLine();
+
+                        // if (id >= 1 && id <= 10) {
+                        // gl.getFruits(idC);
+
+                        // int idF = gl.idC;
+                        // String nameF = gl.nameC;
+                        // String sizeF = gl.sizeC;
+                        // double priceF = gl.priceC;
+                        // int stockF = gl.stocksC;
+
+                        // cmenu.addItemToCart(idF, nameF, sizeF, priceF, stockF);
+                        // } else if (id >= 11 && id <= 20) {
+                        // gl.getVegetables(idC);
+
+                        // int idV = gl.idC;
+                        // String nameV = gl.nameC;
+                        // String sizeV = gl.sizeC;
+                        // double priceV = gl.priceC;
+                        // int stockV = gl.stocksC;
+
+                        // cmenu.addItemToCart(idV, nameV, sizeV, priceV, stockV);
+                        // } else if (id >= 21 && id <= 30) {
+                        // gl.getSnacks(idC);
+
+                        // int idF = gl.idC;
+                        // String nameF = gl.nameC;
+                        // String sizeF = gl.sizeC;
+                        // double priceF = gl.priceC;
+                        // int stockF = gl.stocksC;
+
+                        // cmenu.addItemToCart(idF, nameF, sizeF, priceF, stockF);
+                        // } else if (id >= 31 && id <= 40) {
+                        // gl.getDairy(idC);
+
+                        // int idF = gl.idC;
+                        // String nameF = gl.nameC;
+                        // String sizeF = gl.sizeC;
+                        // double priceF = gl.priceC;
+                        // int stockF = gl.stocksC;
+
+                        // cmenu.addItemToCart(idF, nameF, sizeF, priceF, stockF);
+                        // } else if (id >= 41 && id <= 50) {
+                        // gl.getBeverages(idC);
+
+                        // int idF = gl.idC;
+                        // String nameF = gl.nameC;
+                        // String sizeF = gl.sizeC;
+                        // double priceF = gl.priceC;
+                        // int stockF = gl.stocksC;
+
+                        // cmenu.addItemToCart(idF, nameF, sizeF, priceF, stockF);
+                        // } else if (id >= 51 && id <= 60) {
+                        // gl.getCosmetics(idC);
+
+                        // int idF = gl.idC;
+                        // String nameF = gl.nameC;
+                        // String sizeF = gl.sizeC;
+                        // double priceF = gl.priceC;
+                        // int stockF = gl.stocksC;
+
+                        // cmenu.addItemToCart(idF, nameF, sizeF, priceF, stockF);
+                        // } else if (id >= 61 && id <= 70) {
+                        // gl.getHousehold(idC);
+
+                        // int idF = gl.idC;
+                        // String nameF = gl.nameC;
+                        // String sizeF = gl.sizeC;
+                        // double priceF = gl.priceC;
+                        // int stockF = gl.stocksC;
+
+                        // cmenu.addItemToCart(idF, nameF, sizeF, priceF, stockF);
+                        // } else if (id >= 71 && id <= 80) {
+                        // gl.getClothes(idC);
+
+                        // int idF = gl.idC;
+                        // String nameF = gl.nameC;
+                        // String sizeF = gl.sizeC;
+                        // double priceF = gl.priceC;
+                        // int stockF = gl.stocksC;
+
+                        // cmenu.addItemToCart(idF, nameF, sizeF, priceF, stockF);
+                        // } else if (id >= 81 && id <= 200) {
+                        // gl.getNewArrivals(idC);
+
+                        // int idF = gl.idC;
+                        // String nameF = gl.nameC;
+                        // String sizeF = gl.sizeC;
+                        // double priceF = gl.priceC;
+                        // int stockF = gl.stocksC;
+
+                        // cmenu.addItemToCart(idF, nameF, sizeF, priceF, stockF);
+                        // }
+
+                        // cmenu.addItemToCart();

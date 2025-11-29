@@ -113,30 +113,47 @@ public class Main {
 
                     if (choice == 0) {
                         System.out.println("You have successfully log out!");
+                        System.out.println("");
                         break;
                     } else if (choice == 1) {
                         action.viewAllItems();
                     } else if (choice == 2) {
-                        System.out.println("Please select the ID of the Product/Item you wish to add.");
 
+                        System.out.println("Please select the ID of the Product/Item you wish to add.");
+                        System.out.println("");
+                        System.out.println("");
                         System.out.print("Item selected: ID ");
 
                         int idC = s.nextInt();
+                        s.nextLine(); // Consume the newline character
+
+                        System.out.print("Enter Quantity: ");
+                        int quantity = s.nextInt();
                         s.nextLine();
 
-                        if (id >= 1 || id <= 10) {
-                            gl.getFruits(idC);
+                        Object[] selectedProduct = gl.findProductInAllLists(idC);
 
-                            int idF = gl.idC;
-                            String nameF = gl.nameC;
-                            String sizeF = gl.sizeC;
-                            double priceF = gl.priceC;
-                            int stockF = gl.stocksC;
+                        if (selectedProduct != null) {
+                            // Product found, extract the data from the returned array
+                            int idS = (int) selectedProduct[0];
+                            String name = (String) selectedProduct[1];
+                            String size = (String) selectedProduct[2];
+                            double price = (double) selectedProduct[3];
+                            // int stocks = (int) selectedProduct[4];
 
-                            cmenu.addItemToCart(idF, nameF, sizeF, priceF, stockF);
+                            double amount = quantity * price;
+
+                            cmenu.addItemToCart(idS, name, size, quantity, price, amount);
+                            System.out.println("");
+                            System.out.println("");
+                            System.out.println("Successfully added " + name + " to the cart.");
+                            System.out.println("");
+
+                        } else {
+                            // If the search method returned null
+                            System.out.println("Error: Product ID " + idC + " not found.");
                         }
 
-                        // cmenu.addItemToCart();
                     } else if (choice == 3) {
                         cmenu.updateItemInCart();
                     } else if (choice == 4) {
@@ -144,7 +161,7 @@ public class Main {
                     } else if (choice == 5) {
                         cmenu.openCart();
                     } else if (choice == 6) {
-                        cmenu.checkOut();
+                        cmenu.checkOut(sign.getName(), sign.getEmail());
                     } else if (choice > 6) {
                         System.out.println("Wrong Input. Try again.");
                     }
