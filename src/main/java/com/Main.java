@@ -12,7 +12,7 @@ public class Main {
         Menu menu = new Menu(s);
 
         GroceryList gl = new GroceryList();
-        MenuActions action = new MenuActions();
+        MenuActions action = new MenuActions(gl);
         CustomerMenu cmenu = new CustomerMenu();
         ClerkMenu imenu = new ClerkMenu();
 
@@ -139,7 +139,6 @@ public class Main {
                             String name = (String) selectedProduct[1];
                             String size = (String) selectedProduct[2];
                             double price = (double) selectedProduct[3];
-                            // int stocks = (int) selectedProduct[4];
 
                             double amount = quantity * price;
 
@@ -207,7 +206,7 @@ public class Main {
 
             } else if (id == 4) {
                 System.out.println("");
-                System.out.println("You have successfully logout!");
+                System.out.println("You have successfully exit the system!");
                 break;
             } else {
                 System.out.println("");

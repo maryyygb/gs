@@ -4,11 +4,13 @@ import java.util.*;
 
 public class MenuActions {
     Scanner s = new Scanner(System.in);
+    private GroceryList gl;
 
-    private GroceryList storeItems = new GroceryList();
+    // private GroceryList storeItems = new GroceryList();
     private SignIn cred = new SignIn();
 
-    public MenuActions() {
+    public MenuActions(GroceryList gl) {
+        this.gl = gl;
         cred.checkEmailActiveC("trigger");
     }
 
@@ -40,14 +42,14 @@ public class MenuActions {
         s.nextLine();
         System.out.println("");
 
-        storeItems.addNewItems(id, itemName, itemWeight, itemPrice, itemStock);
-        storeItems.alert();
+        gl.addNewItems(id, itemName, itemWeight, itemPrice, itemStock);
+        gl.alert();
 
     }
 
     // 2
     public void viewAllItems() {
-        storeItems.groceryList();
+        gl.groceryList();
     }
 
     // 3

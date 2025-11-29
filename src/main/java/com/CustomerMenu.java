@@ -48,7 +48,6 @@ public class CustomerMenu {
             totalAmount = totalAmount + (double) item[5];
         }
 
-        System.out.println("");
         System.out.println("Please select your Prefer Payment Method:");
         System.out.println("");
         System.out.println(" 1 - Cash (Cash on Delivery)");
@@ -73,8 +72,8 @@ public class CustomerMenu {
                 System.out.println("==================================================");
                 System.out.println("");
                 try {
-                    System.out.println("Please wait. The payment process might take awhile.");
 
+                    System.out.println("Please wait for a moment. We're still processing.");
                     System.out.println("");
                     System.out.println("--------------------- PROCESSING ---------------------");
                     System.out.println("");
@@ -101,7 +100,7 @@ public class CustomerMenu {
 
                     System.out.println("");
 
-                    System.out.println("Please wait for a moment. We're still processing.");
+                    System.out.println("Please wait. The payment process might take awhile.");
                     System.out.println("");
                     System.out.println("--------------------- PROCESSING ---------------------");
                     System.out.println("");
@@ -138,15 +137,15 @@ public class CustomerMenu {
                     System.out.println("==================================================");
 
                     // Display the name of the Customer
-                    System.out.printf("%-38s %10s%n",
+                    System.out.printf("%-36s %10s%n",
                             "Account Name: ", name);
 
                     // Display the email of the Customer
-                    System.out.printf("%-38s %10s%n",
+                    System.out.printf("%-36s %10s%n",
                             "Account Email: ", email);
 
                     // Print the date
-                    System.out.printf("%-38s %10s%n",
+                    System.out.printf("%-36s %10s%n",
                             "Date: ", today);
 
                     System.out.println("==================================================");
@@ -184,6 +183,19 @@ public class CustomerMenu {
                     System.out.println("       THANK YOU AND BUY AGAIN NEXT TIME   ");
                     System.out.println("");
                     System.out.println("**************************************************");
+
+                    System.out.println("");
+                    System.out.println("");
+                    System.out.println("");
+                    System.out.println("--------------------------------------------------");
+                    System.out.println("");
+                    System.out.println("       Please slide up to see the printed Receipt. Thank you!");
+                    System.out.println("");
+
+                    System.out.println("--------------------------------------------------");
+                    System.out.println("       Please wait for 5 seconds. ");
+                    System.out.println("       We're bringing you back to Home page.");
+                    System.out.println("--------------------------------------------------");
                     System.out.println("");
                     System.out.println("");
                     System.out.println("");
