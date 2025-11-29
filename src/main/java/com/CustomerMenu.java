@@ -19,12 +19,66 @@ public class CustomerMenu {
         cart.add(new Object[] { id, name, size, quantity, price, amount });
     }
 
-    public void updateItemInCart() {
+    public void updateItemInCart(int id, int qty) {
+        System.out.println("");
+
+        while (true) {
+            System.out.println("--------------------------------------------------");
+            System.out.println("Note: If you wish to remove an item,");
+            System.out.println("      please go back or select 2.");
+            System.out.println("      Updating an item will be canceled once you");
+            System.out.println("      press 2. Please be careful!");
+            System.out.println("--------------------------------------------------");
+            System.out.println("");
+            System.out.println("Select a Choice below");
+            System.out.println(" 1 - Proceed");
+            System.out.println(" 2 - Cancel");
+            System.out.println("");
+            System.out.print("You choice: ");
+            int c = s.nextInt();
+            s.nextLine();
+            System.out.println("--------------------------------------------------");
+
+            if (c == 1) {
+
+                String iName = "";
+
+                for (Object[] item : cart) {
+                    if (id == (Integer) item[0]) {
+                        item[3] = qty;
+
+                        item[5] = (Double) item[4] * qty;
+
+                        iName = (String) item[1];
+
+                        System.out.println("");
+                        System.out.println("You successfully update " + iName + "!");
+                        System.out.println("");
+
+                        break;
+
+                    } else {
+                        System.out.println(item[id] + " is not in your cart.");
+                        System.out.println("You can add them by select 2 in Home.");
+
+                        break;
+                    }
+
+                }
+
+            } else if (c == 2) {
+                System.out.println("You successfully cancelled!");
+                break;
+            } else {
+                System.out.println("Wrong input. Please try again.");
+            }
+
+        }
 
     }
 
     public void deleteItemInCart() {
-
+        
     }
 
     public void openCart() {
@@ -189,7 +243,8 @@ public class CustomerMenu {
                     System.out.println("");
                     System.out.println("--------------------------------------------------");
                     System.out.println("");
-                    System.out.println("       Please slide up to see the printed Receipt. Thank you!");
+                    System.out.println("       Please slide up to see the printed Receipt.");
+                    System.out.println("       Thank you!");
                     System.out.println("");
 
                     System.out.println("--------------------------------------------------");

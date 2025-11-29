@@ -154,7 +154,23 @@ public class Main {
                         }
 
                     } else if (choice == 3) {
-                        cmenu.updateItemInCart();
+
+                        System.out.println("--------------------------------------------------");
+                        System.out.println("");
+                        System.out.println("Please select the ID of an item you wish to update.");
+                        System.out.println("");
+                        System.out.println("--------------------------------------------------");
+                        System.out.print("Item ID: ");
+                        int idU = s.nextInt();
+                        s.nextLine();
+
+                        System.out.print("Quantity: ");
+                        int qty = s.nextInt();
+                        s.nextLine();
+                        System.out.println("--------------------------------------------------");
+
+                        cmenu.updateItemInCart(idU, qty);
+
                     } else if (choice == 4) {
                         cmenu.deleteItemInCart();
                     } else if (choice == 5) {
