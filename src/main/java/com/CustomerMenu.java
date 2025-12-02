@@ -41,29 +41,27 @@ public class CustomerMenu {
 
             if (c == 1) {
 
-                String iName = "";
+                boolean found = false;
 
                 for (Object[] item : cart) {
                     if (id == (Integer) item[0]) {
                         item[3] = qty;
-
                         item[5] = (Double) item[4] * qty;
 
-                        iName = (String) item[1];
+                        String iName = (String) item[1];
 
-                        System.out.println("");
-                        System.out.println("You successfully update " + iName + "!");
-                        System.out.println("");
+                        System.out.println();
+                        System.out.println("You successfully updated " + iName + "!");
+                        System.out.println();
 
-                        break;
-
-                    } else {
-                        System.out.println(item[id] + " is not in your cart.");
-                        System.out.println("You can add them by select 2 in Home.");
-
+                        found = true;
                         break;
                     }
+                }
 
+                if (!found) {
+                    System.out.println(id + " is not in your cart.");
+                    System.out.println("You can add it by selecting 2 in Home.");
                 }
 
             } else if (c == 2) {
@@ -90,7 +88,7 @@ public class CustomerMenu {
             System.out.println("");
             System.out.println("Select a Choice below");
             System.out.println(" 1 - Proceed");
-            System.out.println(" 2 - Cancel");
+            System.out.println(" 2 - Back");
             System.out.println("");
             System.out.print("You choice: ");
             int c = s.nextInt();

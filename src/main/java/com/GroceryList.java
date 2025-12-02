@@ -470,6 +470,7 @@ public class GroceryList {
 
 	}
 
+	// FIND PRODUCT FROM THE GROCERY LIST
 	public Object[] findProductInAllLists(int targetId) {
 		// A single list of all your category lists
 		List<ArrayList<Object[]>> allCategories = List.of(
@@ -486,6 +487,666 @@ public class GroceryList {
 		}
 
 		return null; // If the loop finishes without finding anything
+	}
+
+	// UPDATE PRODUCT FROM THE GROCERY LIST
+	public void updateProductInAllLists(int id, String name, String size, double price, int stock) {
+		if (id >= 1 && id <= 10) {
+
+			System.out.println("");
+
+			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+			for (Object[] a : fruits) {
+				if (id == (Integer) a[0]) {
+					a[1] = name;
+					a[2] = size;
+					a[3] = price;
+					a[4] = stock;
+				}
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						a[0], a[1], a[2], a[3], a[4]);
+			}
+
+			System.out.println("");
+		} else if (id >= 11 && id <= 20) {
+
+			System.out.println("");
+
+			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+			for (Object[] a : fruits) {
+				if (id == (Integer) a[0]) {
+					a[1] = name;
+					a[2] = size;
+					a[3] = price;
+					a[4] = stock;
+				}
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						a[0], a[1], a[2], a[3], a[4]);
+			}
+
+			System.out.println("");
+		} else if (id >= 21 && id <= 30) {
+
+			System.out.println("");
+
+			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+			for (Object[] a : fruits) {
+				if (id == (Integer) a[0]) {
+					a[1] = name;
+					a[2] = size;
+					a[3] = price;
+					a[4] = stock;
+				}
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						a[0], a[1], a[2], a[3], a[4]);
+			}
+
+			System.out.println("");
+		} else if (id >= 31 && id <= 40) {
+
+			System.out.println("");
+
+			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+			for (Object[] a : fruits) {
+				if (id == (Integer) a[0]) {
+					a[1] = name;
+					a[2] = size;
+					a[3] = price;
+					a[4] = stock;
+				}
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						a[0], a[1], a[2], a[3], a[4]);
+			}
+
+			System.out.println("");
+		} else if (id >= 41 && id <= 50) {
+
+			System.out.println("");
+
+			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+			for (Object[] a : fruits) {
+				if (id == (Integer) a[0]) {
+					a[1] = name;
+					a[2] = size;
+					a[3] = price;
+					a[4] = stock;
+				}
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						a[0], a[1], a[2], a[3], a[4]);
+			}
+
+			System.out.println("");
+		} else if (id >= 51 && id <= 60) {
+
+			System.out.println("");
+
+			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+			for (Object[] a : fruits) {
+				if (id == (Integer) a[0]) {
+					a[1] = name;
+					a[2] = size;
+					a[3] = price;
+					a[4] = stock;
+				}
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						a[0], a[1], a[2], a[3], a[4]);
+			}
+
+			System.out.println("");
+		} else if (id >= 61 && id <= 70) {
+
+			System.out.println("");
+
+			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+			for (Object[] a : fruits) {
+				if (id == (Integer) a[0]) {
+					a[1] = name;
+					a[2] = size;
+					a[3] = price;
+					a[4] = stock;
+				}
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						a[0], a[1], a[2], a[3], a[4]);
+			}
+
+			System.out.println("");
+		} else if (id >= 71 && id <= 80) {
+
+			System.out.println("");
+
+			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+			for (Object[] a : fruits) {
+				if (id == (Integer) a[0]) {
+					a[1] = name;
+					a[2] = size;
+					a[3] = price;
+					a[4] = stock;
+				}
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						a[0], a[1], a[2], a[3], a[4]);
+			}
+
+			System.out.println("");
+		} else if (id >= 81 && id <= 100) {
+
+			System.out.println("");
+
+			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+			for (Object[] a : fruits) {
+				if (id == (Integer) a[0]) {
+					a[1] = name;
+					a[2] = size;
+					a[3] = price;
+					a[4] = stock;
+				}
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						a[0], a[1], a[2], a[3], a[4]);
+			}
+
+			System.out.println("");
+		}
+
+	}
+
+	// DELETE PRODUCT FROM THE GROCERY LIST
+	public void deleteProductInAllLists(int id, String name, String size, double price, int stock) {
+		if (id >= 1 && id <= 10) {
+
+			boolean check = false;
+
+			System.out.println("");
+
+			Iterator<Object[]> iterator = fruits.iterator();
+			while (iterator.hasNext()) {
+
+				Object[] item = iterator.next();
+
+				if (id == (Integer) item[0]) {
+					iterator.remove(); // safely remove during iteration
+
+					System.out.println("--------------------------------------------------");
+					System.out.println("");
+					System.out.println(item[1] + " has been deleted successfully!");
+					System.out.println("");
+					System.out.println("--------------------------------------------------");
+
+					check = true;
+					break;
+
+				} else {
+
+					check = false;
+				}
+
+			}
+
+			if (check == false) {
+
+				System.out.println("--------------------------------------------------");
+				System.out.println("");
+				System.out.println("Item with ID " + id + " not found.");
+				System.out.println("");
+				System.out.println("--------------------------------------------------");
+			}
+
+			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+			for (Object[] a : fruits) {
+				if (id == (Integer) a[0]) {
+					a[1] = name;
+					a[2] = size;
+					a[3] = price;
+					a[4] = stock;
+				}
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						a[0], a[1], a[2], a[3], a[4]);
+			}
+
+			System.out.println("");
+
+		} else if (id >= 11 && id <= 20) {
+
+			boolean check = false;
+
+			System.out.println("");
+
+			Iterator<Object[]> iterator = vegetables.iterator();
+			while (iterator.hasNext()) {
+
+				Object[] item = iterator.next();
+
+				if (id == (Integer) item[0]) {
+					iterator.remove(); // safely remove during iteration
+
+					System.out.println("--------------------------------------------------");
+					System.out.println("");
+					System.out.println(item[1] + " has been deleted successfully!");
+					System.out.println("");
+					System.out.println("--------------------------------------------------");
+
+					check = true;
+					break;
+
+				} else {
+
+					check = false;
+				}
+
+			}
+
+			if (check == false) {
+
+				System.out.println("--------------------------------------------------");
+				System.out.println("");
+				System.out.println("Item with ID " + id + " not found.");
+				System.out.println("");
+				System.out.println("--------------------------------------------------");
+			}
+
+			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+			for (Object[] a : fruits) {
+				if (id == (Integer) a[0]) {
+					a[1] = name;
+					a[2] = size;
+					a[3] = price;
+					a[4] = stock;
+				}
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						a[0], a[1], a[2], a[3], a[4]);
+			}
+
+			System.out.println("");
+
+		} else if (id >= 21 && id <= 30) {
+
+			boolean check = false;
+
+			System.out.println("");
+
+			Iterator<Object[]> iterator = snacks.iterator();
+			while (iterator.hasNext()) {
+
+				Object[] item = iterator.next();
+
+				if (id == (Integer) item[0]) {
+					iterator.remove(); // safely remove during iteration
+
+					System.out.println("--------------------------------------------------");
+					System.out.println("");
+					System.out.println(item[1] + " has been deleted successfully!");
+					System.out.println("");
+					System.out.println("--------------------------------------------------");
+
+					check = true;
+					break;
+
+				} else {
+
+					check = false;
+				}
+
+			}
+
+			if (check == false) {
+
+				System.out.println("--------------------------------------------------");
+				System.out.println("");
+				System.out.println("Item with ID " + id + " not found.");
+				System.out.println("");
+				System.out.println("--------------------------------------------------");
+			}
+
+			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+			for (Object[] a : fruits) {
+				if (id == (Integer) a[0]) {
+					a[1] = name;
+					a[2] = size;
+					a[3] = price;
+					a[4] = stock;
+				}
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						a[0], a[1], a[2], a[3], a[4]);
+			}
+
+			System.out.println("");
+
+		} else if (id >= 31 && id <= 40) {
+
+			boolean check = false;
+
+			System.out.println("");
+
+			Iterator<Object[]> iterator = dairy.iterator();
+			while (iterator.hasNext()) {
+
+				Object[] item = iterator.next();
+
+				if (id == (Integer) item[0]) {
+					iterator.remove(); // safely remove during iteration
+
+					System.out.println("--------------------------------------------------");
+					System.out.println("");
+					System.out.println(item[1] + " has been deleted successfully!");
+					System.out.println("");
+					System.out.println("--------------------------------------------------");
+
+					check = true;
+					break;
+
+				} else {
+
+					check = false;
+				}
+
+			}
+
+			if (check == false) {
+
+				System.out.println("--------------------------------------------------");
+				System.out.println("");
+				System.out.println("Item with ID " + id + " not found.");
+				System.out.println("");
+				System.out.println("--------------------------------------------------");
+			}
+
+			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+			for (Object[] a : fruits) {
+				if (id == (Integer) a[0]) {
+					a[1] = name;
+					a[2] = size;
+					a[3] = price;
+					a[4] = stock;
+				}
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						a[0], a[1], a[2], a[3], a[4]);
+			}
+
+			System.out.println("");
+
+		} else if (id >= 41 && id <= 50) {
+
+			boolean check = false;
+
+			System.out.println("");
+
+			Iterator<Object[]> iterator = beverages.iterator();
+			while (iterator.hasNext()) {
+
+				Object[] item = iterator.next();
+
+				if (id == (Integer) item[0]) {
+					iterator.remove(); // safely remove during iteration
+
+					System.out.println("--------------------------------------------------");
+					System.out.println("");
+					System.out.println(item[1] + " has been deleted successfully!");
+					System.out.println("");
+					System.out.println("--------------------------------------------------");
+
+					check = true;
+					break;
+
+				} else {
+
+					check = false;
+				}
+
+			}
+
+			if (check == false) {
+
+				System.out.println("--------------------------------------------------");
+				System.out.println("");
+				System.out.println("Item with ID " + id + " not found.");
+				System.out.println("");
+				System.out.println("--------------------------------------------------");
+			}
+
+			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+			for (Object[] a : fruits) {
+				if (id == (Integer) a[0]) {
+					a[1] = name;
+					a[2] = size;
+					a[3] = price;
+					a[4] = stock;
+				}
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						a[0], a[1], a[2], a[3], a[4]);
+			}
+
+			System.out.println("");
+
+		} else if (id >= 51 && id <= 60) {
+
+			boolean check = false;
+
+			System.out.println("");
+
+			Iterator<Object[]> iterator = cosmetics.iterator();
+			while (iterator.hasNext()) {
+
+				Object[] item = iterator.next();
+
+				if (id == (Integer) item[0]) {
+					iterator.remove(); // safely remove during iteration
+
+					System.out.println("--------------------------------------------------");
+					System.out.println("");
+					System.out.println(item[1] + " has been deleted successfully!");
+					System.out.println("");
+					System.out.println("--------------------------------------------------");
+
+					check = true;
+					break;
+
+				} else {
+
+					check = false;
+				}
+
+			}
+
+			if (check == false) {
+
+				System.out.println("--------------------------------------------------");
+				System.out.println("");
+				System.out.println("Item with ID " + id + " not found.");
+				System.out.println("");
+				System.out.println("--------------------------------------------------");
+			}
+
+			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+			for (Object[] a : fruits) {
+				if (id == (Integer) a[0]) {
+					a[1] = name;
+					a[2] = size;
+					a[3] = price;
+					a[4] = stock;
+				}
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						a[0], a[1], a[2], a[3], a[4]);
+			}
+
+			System.out.println("");
+
+		} else if (id >= 61 && id <= 70) {
+
+			boolean check = false;
+
+			System.out.println("");
+
+			Iterator<Object[]> iterator = household.iterator();
+			while (iterator.hasNext()) {
+
+				Object[] item = iterator.next();
+
+				if (id == (Integer) item[0]) {
+					iterator.remove(); // safely remove during iteration
+
+					System.out.println("--------------------------------------------------");
+					System.out.println("");
+					System.out.println(item[1] + " has been deleted successfully!");
+					System.out.println("");
+					System.out.println("--------------------------------------------------");
+
+					check = true;
+					break;
+
+				} else {
+
+					check = false;
+				}
+
+			}
+
+			if (check == false) {
+
+				System.out.println("--------------------------------------------------");
+				System.out.println("");
+				System.out.println("Item with ID " + id + " not found.");
+				System.out.println("");
+				System.out.println("--------------------------------------------------");
+			}
+
+			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+			for (Object[] a : fruits) {
+				if (id == (Integer) a[0]) {
+					a[1] = name;
+					a[2] = size;
+					a[3] = price;
+					a[4] = stock;
+				}
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						a[0], a[1], a[2], a[3], a[4]);
+			}
+
+			System.out.println("");
+
+		} else if (id >= 71 && id <= 80) {
+
+			boolean check = false;
+
+			System.out.println("");
+
+			Iterator<Object[]> iterator = clothes.iterator();
+			while (iterator.hasNext()) {
+
+				Object[] item = iterator.next();
+
+				if (id == (Integer) item[0]) {
+					iterator.remove(); // safely remove during iteration
+
+					System.out.println("--------------------------------------------------");
+					System.out.println("");
+					System.out.println(item[1] + " has been deleted successfully!");
+					System.out.println("");
+					System.out.println("--------------------------------------------------");
+
+					check = true;
+					break;
+
+				} else {
+
+					check = false;
+				}
+
+			}
+
+			if (check == false) {
+
+				System.out.println("--------------------------------------------------");
+				System.out.println("");
+				System.out.println("Item with ID " + id + " not found.");
+				System.out.println("");
+				System.out.println("--------------------------------------------------");
+			}
+
+			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+			for (Object[] a : fruits) {
+				if (id == (Integer) a[0]) {
+					a[1] = name;
+					a[2] = size;
+					a[3] = price;
+					a[4] = stock;
+				}
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						a[0], a[1], a[2], a[3], a[4]);
+			}
+
+			System.out.println("");
+
+		} else if (id >= 81 && id <= 100) {
+
+			boolean check = false;
+
+			System.out.println("");
+
+			Iterator<Object[]> iterator = newItems.iterator();
+			while (iterator.hasNext()) {
+
+				Object[] item = iterator.next();
+
+				if (id == (Integer) item[0]) {
+					iterator.remove(); // safely remove during iteration
+
+					System.out.println("--------------------------------------------------");
+					System.out.println("");
+					System.out.println(item[1] + " has been deleted successfully!");
+					System.out.println("");
+					System.out.println("--------------------------------------------------");
+
+					check = true;
+					break;
+
+				} else {
+
+					check = false;
+				}
+
+			}
+
+			if (check == false) {
+
+				System.out.println("--------------------------------------------------");
+				System.out.println("");
+				System.out.println("Item with ID " + id + " not found.");
+				System.out.println("");
+				System.out.println("--------------------------------------------------");
+			}
+
+			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
+
+			for (Object[] a : fruits) {
+				if (id == (Integer) a[0]) {
+					a[1] = name;
+					a[2] = size;
+					a[3] = price;
+					a[4] = stock;
+				}
+				System.out.printf("%-5s %-15s %-10s PHP%-9.2f %-10s%n",
+						a[0], a[1], a[2], a[3], a[4]);
+			}
+
+			System.out.println("");
+
+		}
+
 	}
 
 }

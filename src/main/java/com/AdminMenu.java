@@ -2,22 +2,22 @@ package com;
 
 import java.util.*;
 
-public class MenuActions {
-    Scanner s = new Scanner(System.in);
+public class AdminMenu extends AddMenu {
+    Scanner s;
     private GroceryList gl;
 
     // private GroceryList storeItems = new GroceryList();
     private SignIn cred = new SignIn();
 
-    public MenuActions(GroceryList gl) {
+    public AdminMenu(GroceryList gl) {
         this.gl = gl;
-        cred.checkEmailActiveC("trigger");
+        // cred.checkEmailActiveC("trigger");
     }
 
     // 1
-    public void addGroceryItem() {
+    public void addItem() {
 
-        Scanner s = new Scanner(System.in);
+        s = new Scanner(System.in);
 
         System.out.print("Enter the desired ID for the item: ");
         int id = s.nextInt();

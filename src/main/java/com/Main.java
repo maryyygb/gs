@@ -12,9 +12,9 @@ public class Main {
         Menu menu = new Menu(s);
 
         GroceryList gl = new GroceryList();
-        MenuActions action = new MenuActions(gl);
+        AdminMenu action = new AdminMenu(gl);
         CustomerMenu cmenu = new CustomerMenu();
-        ClerkMenu imenu = new ClerkMenu();
+        ClerkMenu imenu = new ClerkMenu(gl);
 
         SignIn sign = new SignIn();
 
@@ -68,7 +68,7 @@ public class Main {
                         System.out.println("You have successfully log out!");
                         break;
                     } else if (choice == 1) {
-                        action.addGroceryItem();
+                        action.addItem();
                     } else if (choice == 2) {
                         action.viewAllItems();
                     } else if (choice == 3) {
@@ -172,7 +172,16 @@ public class Main {
                         cmenu.updateItemInCart(idU, qty);
 
                     } else if (choice == 4) {
-                        cmenu.deleteItemInCart();
+                        System.out.println("--------------------------------------------------");
+                        System.out.println("");
+                        System.out.println("Please select the ID of an item you wish to delete.");
+                        System.out.println("");
+                        System.out.println("--------------------------------------------------");
+                        System.out.print("Item ID: ");
+                        int idX = s.nextInt();
+                        s.nextLine();
+                        System.out.println("--------------------------------------------------");
+                        cmenu.deleteItemInCart(idX);
                     } else if (choice == 5) {
                         cmenu.openCart();
                     } else if (choice == 6) {
@@ -210,12 +219,14 @@ public class Main {
                     } else if (choice == 1) {
                         action.viewAllItems();
                     } else if (choice == 2) {
-                        action.addGroceryItem();
+                        action.addItem();
                     } else if (choice == 3) {
                         imenu.updateItem();
                     } else if (choice == 4) {
                         imenu.deleteItem();
-                    } else if (choice > 4) {
+                    } else if (choice == 5) {
+                        imenu.viewAllDeletedItems();
+                    } else if (choice > 5) {
                         System.out.println("Wrong Input. Try again.");
                     }
                 }
