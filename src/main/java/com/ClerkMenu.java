@@ -53,9 +53,11 @@ public class ClerkMenu extends AddMenu {
         System.out.println("Note: To update an item in the list,");
         System.out.println("      you must provide the ID first.");
         System.out.println("");
+
         System.out.print("ID: ");
         int c = s.nextInt();
         s.nextLine();
+        
         System.out.println("");
         System.out.println("--------------------------------------------------");
         System.out.println("");
@@ -146,7 +148,6 @@ public class ClerkMenu extends AddMenu {
     }
 
     public void viewAllDeletedItems() {
-
         System.out.println("\n==================== DELETED ====================");
         System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Weight", "Price", "Stock");
         for (Object[] item : deletedItems) {

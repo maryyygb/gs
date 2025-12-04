@@ -515,7 +515,7 @@ public class GroceryList {
 
 			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
 
-			for (Object[] a : fruits) {
+			for (Object[] a : vegetables) {
 				if (id == (Integer) a[0]) {
 					a[1] = name;
 					a[2] = size;
@@ -533,7 +533,7 @@ public class GroceryList {
 
 			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
 
-			for (Object[] a : fruits) {
+			for (Object[] a : snacks) {
 				if (id == (Integer) a[0]) {
 					a[1] = name;
 					a[2] = size;
@@ -551,7 +551,7 @@ public class GroceryList {
 
 			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
 
-			for (Object[] a : fruits) {
+			for (Object[] a : dairy) {
 				if (id == (Integer) a[0]) {
 					a[1] = name;
 					a[2] = size;
@@ -569,7 +569,7 @@ public class GroceryList {
 
 			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
 
-			for (Object[] a : fruits) {
+			for (Object[] a : beverages) {
 				if (id == (Integer) a[0]) {
 					a[1] = name;
 					a[2] = size;
@@ -587,7 +587,7 @@ public class GroceryList {
 
 			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
 
-			for (Object[] a : fruits) {
+			for (Object[] a : cosmetics) {
 				if (id == (Integer) a[0]) {
 					a[1] = name;
 					a[2] = size;
@@ -605,7 +605,7 @@ public class GroceryList {
 
 			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
 
-			for (Object[] a : fruits) {
+			for (Object[] a : household) {
 				if (id == (Integer) a[0]) {
 					a[1] = name;
 					a[2] = size;
@@ -623,7 +623,7 @@ public class GroceryList {
 
 			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
 
-			for (Object[] a : fruits) {
+			for (Object[] a : clothes) {
 				if (id == (Integer) a[0]) {
 					a[1] = name;
 					a[2] = size;
@@ -641,7 +641,7 @@ public class GroceryList {
 
 			System.out.printf("%-5s %-15s %-10s %-10s %-10s%n", "ID", "Name", "Size", "Price", "Stock");
 
-			for (Object[] a : fruits) {
+			for (Object[] a : newItems) {
 				if (id == (Integer) a[0]) {
 					a[1] = name;
 					a[2] = size;

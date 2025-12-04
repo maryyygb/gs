@@ -41,6 +41,7 @@ public class Main {
             System.out.println("");
             System.out.println("==================================================");
 
+            // ONCE THE ROLE HAS BEEN CONFIRMED, RETURN THE RIGHT MENU
             if (id == 1) {
                 sign.setRole("Admin");
 

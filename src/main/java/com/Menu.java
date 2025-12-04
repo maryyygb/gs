@@ -12,6 +12,7 @@ public class Menu {
         this.sc = s;
     }
 
+    // 1
     public void adminMenu() {
         System.out.println("=============================");
         System.out.println(" ");
@@ -46,6 +47,7 @@ public class Menu {
         System.out.println("");
     }
 
+    // 2
     public void customerMenu() {
         System.out.println("=============================");
         System.out.println(" ");
@@ -78,6 +80,7 @@ public class Menu {
         System.out.println("");
     }
 
+    // 3
     public void clerkMenu() {
         System.out.println("=============================");
         System.out.println(" ");

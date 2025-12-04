@@ -3,7 +3,6 @@ package com;
 import java.util.*;
 
 public class AdminMenu extends AddMenu {
-    Scanner s;
     private GroceryList gl;
 
     // private GroceryList storeItems = new GroceryList();
@@ -17,7 +16,7 @@ public class AdminMenu extends AddMenu {
     // 1
     public void addItem() {
 
-        s = new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
 
         System.out.print("Enter the desired ID for the item: ");
         int id = s.nextInt();
@@ -69,6 +68,8 @@ public class AdminMenu extends AddMenu {
 
     // 6
     public void addNewAdminUser() {
+        Scanner s = new Scanner(System.in);
+
         System.out.print("Type the new email: ");
         String email = s.nextLine();
 
@@ -82,6 +83,8 @@ public class AdminMenu extends AddMenu {
 
     // 7
     public void addNewCustomerUser() {
+        Scanner s = new Scanner(System.in);
+
         System.out.print("Type the new email: ");
         String email = s.nextLine();
 
@@ -95,6 +98,8 @@ public class AdminMenu extends AddMenu {
 
     // 8
     public void addNewClerkUser() {
+        Scanner s = new Scanner(System.in);
+
         System.out.print("Type the new email: ");
         String email = s.nextLine();
 
